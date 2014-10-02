@@ -1,0 +1,3 @@
+>>
+Product of triplet:  31875000
+>>
