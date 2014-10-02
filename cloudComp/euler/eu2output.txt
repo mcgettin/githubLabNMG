@@ -1,0 +1,6 @@
+>>> 
+
+tally is:  4613732
+
+[press ENTER to end program]
+>>> 
