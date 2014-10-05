@@ -12,9 +12,9 @@ def scanHorizontal(normGrid): #takes in the grid of numbers
 	top=0
 	while i < 397:	#logically the last place i could be in the 400 number block
 		if i%20 is 17: i+=3 #reached end of row? go to the next
-		tmp=int(normGrid[i])+\
-		int(normGrid[i+1])+\
-		int(normGrid[i+2])+\
+		tmp=int(normGrid[i])*\
+		int(normGrid[i+1])*\
+		int(normGrid[i+2])*\
 		int(normGrid[i+3])
 		
 		if tmp>top: top=tmp #updates top if a successor is found
@@ -28,9 +28,9 @@ def scanVertical(normGrid):
 	i=0
 	top=0
 	while i < 340: #last place before i reading down yields out of bounds
-		tmp=int(normGrid[i])+\
-		int(normGrid[i+20])+\
-		int(normGrid[i+40])+\
+		tmp=int(normGrid[i])*\
+		int(normGrid[i+20])*\
+		int(normGrid[i+40])*\
 		int(normGrid[i+60])
 
 		if tmp>top: top=tmp
@@ -43,9 +43,9 @@ def scanDiagR(normGrid):
 	top=0
 	while i < 337: #last place for i; no wrap-around
 		if i%20 is 17: i+=3	#same as horiz, virtually
-		tmp=int(normGrid[i])+\
-		int(normGrid[i+21])+\
-		int(normGrid[i+42])+\
+		tmp=int(normGrid[i])*\
+		int(normGrid[i+21])*\
+		int(normGrid[i+42])*\
 		int(normGrid[i+63])
 
 		if tmp>top: top=tmp
@@ -58,10 +58,10 @@ def scanDiagL(normGrid):
 	top=0
 	while i < 340: #last place for i; no wrap-around
 		if i%20 is 0: i+=3	#same as horiz, virtually
-		tmp=int(normGrid[i])+\
-		int(normGrid[i+19])+\
-		int(normGrid[i+18])+\
-		int(normGrid[i+17])
+		tmp=int(normGrid[i])*\
+		int(normGrid[i+19])*\
+		int(normGrid[i+38])*\
+		int(normGrid[i+57])
                 #the tmp is multipling diagagonally (down 1 row, across 1 column)
 
 		if tmp>top: top=tmp
