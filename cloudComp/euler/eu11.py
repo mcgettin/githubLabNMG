@@ -37,7 +37,36 @@ def scanVertical(normGrid):
 		i+=1
 	return top 
 
+#function that scans diagonally right, like a blend of previous two functions, almost
+def scanDiagR(normGrid):
+	i=0
+	top=0
+	while i < 337: #last place for i; no wrap-around
+		if i%20 is 17: i+=3	#same as horiz, virtually
+		tmp=int(normGrid[i])+\
+		int(normGrid[i+21])+\
+		int(normGrid[i+42])+\
+		int(normGrid[i+63])
 
+		if tmp>top: top=tmp
+		i+=1
+	return top
+
+
+def scanDiagL(normGrid):
+	i=3
+	top=0
+	while i < 340: #last place for i; no wrap-around
+		if i%20 is 0: i+=3	#same as horiz, virtually
+		tmp=int(normGrid[i])+\
+		int(normGrid[i+19])+\
+		int(normGrid[i+18])+\
+		int(normGrid[i+17])
+                #the tmp is multipling diagagonally (down 1 row, across 1 column)
+
+		if tmp>top: top=tmp
+		i+=1
+	return top
 
 
 top=0 #result we are looking for, yet to be found
@@ -77,5 +106,13 @@ topVert=scanVertical(normGrid)
 print("Maximum Vertical: ",topVert)
 if topVert > top: top=topVert
 
+topDiagR=scanDiagR(normGrid)
+print("Maximum Right Diagonal: ",topDiagR)
+if topDiagR > top: top=topDiagR
 
+topDiagL=scanDiagL(normGrid)
+print("Maximum Left Diagonal: ",topDiagL)
+if topDiagL > top: top=topDiagL
+
+#finally we have the result after all possible directions are scanned
 print("\nGreatest Product: ",top)
