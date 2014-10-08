@@ -10,8 +10,7 @@ FROM ubuntu:trusty
 MAINTAINER Maintaner Name
 
 # Add the application resources URL
-RUN echo "deb http://ie.archive.ubuntu.com/ubuntu/ trusty main universe" >> /etc
-/apt/sources.list
+RUN echo "deb http://ie.archive.ubuntu.com/ubuntu/ trusty main universe" >> /etc/apt/sources.list
 
 # Update the sources list
 RUN apt-get update
