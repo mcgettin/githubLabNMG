@@ -1,0 +1,23 @@
+>>> 
+factor 71
+-- Prime factor of  600851475143 :  71
+factor 839
+-- Prime factor of  600851475143 :  839
+factor 1471
+-- Prime factor of  600851475143 :  1471
+factor 6857
+-- Prime factor of  600851475143 :  6857
+factor 59569
+factor 104441
+factor 486847
+factor 1234169
+factor 5753023
+factor 10086647
+factor 87625999
+
+
+(goes on further but takes ages to process)
+
+[at the end it prints]
+
+Greatest prime factor is: 6857
