@@ -1,0 +1,27 @@
+>>> 
+Number 3: 2 products
+Number 6: 4 products
+Number 28: 6 products
+Number 36: 9 products
+Number 120: 16 products
+Number 300: 18 products
+Number 528: 20 products
+Number 630: 24 products
+Number 2016: 36 products
+Number 3240: 40 products
+Number 5460: 48 products
+Number 25200: 90 products
+Number 73920: 112 products
+Number 157080: 128 products
+Number 437580: 144 products
+Number 749700: 162 products
+Number 1385280: 168 products
+Number 1493856: 192 products
+Number 2031120: 240 products
+Number 2162160: 320 products
+Number 17907120: 480 products
+Number 76576500: 576 products
+
+Natural number 76576500 has 576 products.
+
+>>> 
