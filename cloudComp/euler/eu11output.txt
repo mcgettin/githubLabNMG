@@ -1,9 +1,8 @@
-
 user@snf-30097:~/C12810959/cloudComp/euler$ python3 eu11.py
-Maximum Horizontal:  335
-Maximum Vertical:  342
-Maximum Right Diagonal:  325
-Maximum Left Diagonal:  319
+Maximum Horizontal:  48477312
+Maximum Vertical:  51267216
+Maximum Right Diagonal:  40304286
+Maximum Left Diagonal:  70600674
 
-Greatest Product:  342
+Greatest Product:  70600674
 
